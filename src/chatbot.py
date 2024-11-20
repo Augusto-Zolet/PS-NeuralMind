@@ -7,8 +7,6 @@ from nltk.tokenize import sent_tokenize
 from langchain.text_splitter import CharacterTextSplitter
 from langchain_openai import OpenAIEmbeddings
 from openai import OpenAI
-import subprocess
-import sys
 
 # Certifique-se de ter baixado os pacotes necessários
 nltk.download('punkt')
@@ -82,7 +80,7 @@ def generate_answer(messages, embeddings, index, texts):
 
 # Função principal do aplicativo Streamlit
 def main():
-    
+
     # Configuração da página
     st.set_page_config(page_title="Chatbot Vestibular Unicamp 2025", page_icon="🎓", layout="wide")
 
