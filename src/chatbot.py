@@ -1,7 +1,6 @@
 import os
 import numpy as np
 import faiss
-import pandas as pd
 import streamlit as st
 import nltk
 from nltk.tokenize import sent_tokenize
@@ -14,22 +13,6 @@ import sys
 # Certifique-se de ter baixado os pacotes necessários
 nltk.download('punkt')
 nltk.download('punkt_tab')
-
-# Função para instalar as dependências
-def install_requirements():
-    if 'dependencies_installed' in st.session_state and st.session_state.dependencies_installed:
-        return  # Dependências já instaladas, não instala novamente
-
-    requirements_file = "../requirements.txt"
-    if os.path.exists(requirements_file):
-        try:
-            subprocess.check_call([sys.executable, "-m", "pip", "install", "-r", requirements_file])
-            print("Dependências instaladas com sucesso!")
-            st.session_state.dependencies_installed = True  # Marca como instalado
-        except subprocess.CalledProcessError as e:
-            print(f"Erro ao instalar dependências: {e}")
-    else:
-        print(f"Arquivo {requirements_file} não encontrado!")
 
 # Configuração da chave de API
 client = OpenAI(
@@ -99,9 +82,7 @@ def generate_answer(messages, embeddings, index, texts):
 
 # Função principal do aplicativo Streamlit
 def main():
-    # Chamar a função no início do script
-    install_requirements()
-
+    
     # Configuração da página
     st.set_page_config(page_title="Chatbot Vestibular Unicamp 2025", page_icon="🎓", layout="wide")
 
