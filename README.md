@@ -1,6 +1,6 @@
 # PS-NeuralMind: Chatbot com RAG para dúvidas do vestibular 2025 da Unicamp 
 
-Este projeto consiste em um chatbot que utiliza o modelo gpt 3.5 turbo combinaco com a tecnica RAG (Retrieval-Augmented Generation) para responder dúvidas relacionadas ao vestibular 2025 da Unicamp.
+Este projeto consiste em um chatbot que utiliza o modelo gpt 3.5 turbo combinado com a técnica RAG (Retrieval-Augmented Generation) para responder dúvidas relacionadas ao vestibular 2025 da Unicamp.
 
 ## Pré-requisitos
 
