@@ -2,7 +2,15 @@
 
 Este projeto consiste em um chatbot que utiliza o modelo GPT-3.5-turbo combinado com a técnica RAG (Retrieval-Augmented Generation) para responder dúvidas relacionadas ao vestibular 2025 da Unicamp.
 
-## Pré-requisitos
+## Relatório Detalhado
+
+O relatório detalhado está disponível em: [Relatório NeuralMind.pdf](Relatório%20NeuralMind.pdf)
+
+## Acessar pelo Navegador
+
+Você pode acessar o chatbot diretamente pelo navegador no link: [zolebot-neuralmind.streamlit.app](https://zolebot-neuralmind.streamlit.app/)
+
+## Pré-requisitos para Executar Localmente:
 
 Para execução do script, previamente deve-se ter instalado:
 
