@@ -100,6 +100,28 @@ Siga os passos abaixo para executar o chatbot:
 
    O Streamlit abrirá uma nova janela no seu navegador padrão com a interface do chatbot.
 
+
+## Scripts Adicionais
+
+### extract_pdf_text.py
+
+Extrai o texto bruto de um arquivo PDF. **Atenção:** Não é recomendado executar este script, pois o arquivo `Normas_Vestibular_2025.txt` já recebeu tratamento manual após a extração inicial.
+
+**Como executar:**
+
+```bash
+python extract_pdf_text.py nome_do_arquivo.pdf
+```
+
+### test_script.py
+
+Testa o chatbot enviando vários prompts pré-definidos e imprime os resultados no terminal. **Nota:** Este script não possui métricas automáticas para avaliar a qualidade das respostas.
+
+**Como executar:**
+
+```bash
+python test_script.py
+```
 ---
 
 **Desenvolvido por**: Augusto Zolet  
