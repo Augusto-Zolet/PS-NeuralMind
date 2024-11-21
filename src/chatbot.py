@@ -26,8 +26,8 @@ def preprocess_text(text):
 def split_text(text):
     text_splitter = CharacterTextSplitter(
         separator='\n',
-        chunk_size=2000,
-        chunk_overlap=400
+        chunk_size=8000,
+        chunk_overlap=1600
     )
     texts = text_splitter.split_text(text)
     return texts
